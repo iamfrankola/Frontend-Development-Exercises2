@@ -1,0 +1,74 @@
+.wrap {
+    margin: auto;
+    width: 90%;
+}
+
+.main-header{
+    background-color: bisque;
+    text-align: center;
+}
+
+.logo,
+.main-nav a{
+    display: inline-block;
+    color: #FFF;
+    text-decoration: none;
+}
+.main-nav a{
+    background-color: lemonchiffon;
+    padding: 0 .74em;
+    border-right: 1px dotted;
+    color: rgba(255, 255, 255, .8);
+    font-size: .7em;
+    line-height: 1rem;
+}
+.main-nav a:hover{
+    text-decoration: underline;
+}
+.main-nav a:last-child{
+    border-right: none;
+}
+.content,
+.main-header{
+    overflow: hidden;
+}
+.col{
+    height: 240px;
+}
+.main{
+    background-color: lightcoral
+}
+.secondary{
+    background-color: burlywood;
+}
+.extra {
+    background-color: #E74C3C;
+    display: none;
+}
+.main-footer{
+    background-color: #95A5A6;
+}
+.main-header,
+.main-footer,
+.col{
+    margin-bottom: 15px;
+    padding: 2.15%;
+    border-radius: 5px;
+}
+
+/* ==================================================================================
+Media Quaries
+   ==================================================================================*/
+  /* Phones to Tablets */
+  @media only screen and (min-width: 481px){
+      .col{
+          float: left;
+      }
+      .main{
+          width: 100%;
+      }
+      .secondary{
+          width: 100%;
+          margin-left: 0.5%
+      }
+  }

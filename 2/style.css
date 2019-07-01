@@ -1,0 +1,93 @@
+h1{
+     font: 700 4em/1 "oswald",
+     sans-serif;
+     letter-spacing: 0;
+     padding: .25em 0 .325em;
+     display: block;
+     margin: 0 auto;
+     text-shadow: 0 0 80px rgba(255, 255, 255, 0.25);
+     background: url(original.gif)repeat-y;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     -webkit-animation: aitf 80s linear infinite;
+     -webkit-backface-visibility: hidden;
+}
+
+
+div{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    margin: 15px;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+body{
+    background-color: brown;
+    -webkit-transform: rotate(6.32rad);
+    -webkit-perspective: 1200px;
+}
+p{
+    position: absolute;
+    background: white;
+    bottom: -1em;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    padding: 5px;
+    margin-right:2px;
+    font-size: 10pt;
+
+}
+hr{
+    margin: 0px 0px 0px 0px;
+    background-color: bisque;
+}
+main{
+    display: inline-block;
+    background-color: bisque;
+    border: 2px solid black dotted;
+    transition: -webkit-transform 1s linear;
+}
+header{
+    display: inline;
+    color: bisque;
+    background-color: bisque
+
+}
+.side-a {
+    z-index: 100;
+}
+.phone:hover {
+    -webkit-transform: rotateY(-45deg);
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background: white;
+        color: rgb(156, 6, 6);
+    }
+
+}
+@media screen and (max-width: 480px) {
+    body {
+        background-color:#4682B4;
+        color: cornflowerblue
+    }
+}
+
+
+@-webkit-keyframes aitf {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}

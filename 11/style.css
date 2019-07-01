@@ -1,0 +1,12 @@
+#sun{
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 40px;
+}
+
+@keyframes sunrise{
+    0% {top: 90%;}
+    100% {top: 0;}
+}
+sun.png
